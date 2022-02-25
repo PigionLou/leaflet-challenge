@@ -38,7 +38,7 @@ function createFeatures(earthquakeData) {
             return "#0000ff"
         }
     }
-ray
+
     var earthquakes = L.geoJSON(earthquakeData, {
         pointToLayer: function (earthquakeData, latlng) {
             return L.circle(latlng, {
@@ -48,7 +48,7 @@ ray
         },
         onEachFeature: onEachFeature
     });
-n
+
     createMap(earthquakes);
 }
 
